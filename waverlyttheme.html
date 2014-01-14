@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+    <title>waverly the book</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,900' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" 
+    src="http://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+  google.load("jquery", "1.3");
+  google.setOnLoadCallback(function() {
+    jQuery(function($) {
+      // do some stuff here, eg load your tweets, ...
+    });
+  });
+</script>
+    <style>
+        body {
+            background: blue;
+            padding: 0;
+            margin: 0;
+        }
+        #covering {
+            position:fixed;
+            margin: 0;
+            background: rgba(0,30,10,1);
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+        header {
+            background: url("http://i.imgur.com/l3IOsXG.png") no-repeat center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 380px;
+            font-family: 'Source Sans Pro', sans-serif;
+            border: black solid 7px;
+            margin: 1% 2% 40px 2%;
+            position: relative;
+        }
+        h1 {
+            line-height: 200px;
+            text-align: center;
+            color: white;
+            font-size: 60px;
+            letter-spacing: 10px;
+            font-weight: 900;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            letter-spacing: 4px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 42px;
+            font-weight: 600;
+        }
+        #subtitle {
+            margin: -105px 0 0 0;
+        }
+        #about {
+            background: rgba(0,0,0,.5);
+            color: rgba(255,255,255,1);
+            height: 75px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            border-top: rgba(0,0,0,1) solid 1px;
+            padding: 10px 0 0 0;
+            position: absolute;
+            bottom: 0;
+        }
+        #rebloggables {
+            background: rgba(0,0,0,.5);
+            color: rgba(255,255,255,1);
+            height: 30px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            border-top: rgba(0,0,0,1) solid 1px;
+            padding: 10px 0 0 0;
+            position: absolute;
+            bottom: 0;
+        }
+        .left {
+            margin: 0 0 40px 0;
+            border: black solid 7px;
+            padding: 1%;
+            background: white;
+            font-family:'Source Sans Pro',sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height:20px;
+            float: left;
+            position: relative;
+            width: 43%;
+            margin-left: 2%;
+        }
+        .right {
+            margin: 0 0 40px 0;
+            border: black solid 7px;
+            padding: 1%;
+            background: white;
+            font-family:'Source Sans Pro',sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height:20px;
+            float: right;
+            position: relative;
+            width: 43%;
+            margin-right: 2%;
+        }
+        #backing {
+        }
+    </style>
+    <script type="text/javascript" 
+    src="http://www.google.com/jsapi">
+    </script>
+</head>
+<body>
+    <div id='covering'>
+        <header>
+            <h1>waverly the book</h1>
+            <h2 id='subtitle'>a mixed-genre collection</h2>
+            <h3 id='about'>about</h3>
+            <h3 id='rebloggables'>rebloggables</h3>
+        </header>
+        <div id='materials'></div>
+            <div class='left'>
+                <h3>testy one</h3>
+                <p>texty textdognw;fnhsnhkesfnhs sfkgnsnfbk fk gkr skg fs g ker gl sflwfg fslh mf b kf gkrw g skg krews gx gk sk erkg skf kle fgk rwg</p>
+            </div>
+            <div class='right'>
+                <h3></h3>
+                <p>mexty mext</p>
+            </div>
+            <div class='right'>
+                <h3>testy one</h3>
+                <p>texty textdognw;fnhsnhkesfnhs sfkgnsnfbk fk gkr skg fs g ker gl sflwfg fslh mf b kf gkrw g skg krews gx gk sk erkg skf kle fgk rwg</p>
+            </div>
+            <div class='left'>
+                <h3></h3>
+                <p>mexty mext</p>
+            </div>
+            <div class='right'>
+                <h3></h3>
+                <p>mexty mext</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $('.rebloggables').on('click', function () {
+            $(this).toggleClass('.covering');
+        });
+    </script>
+</body>
